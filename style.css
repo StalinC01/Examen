@@ -20,8 +20,8 @@ header {
 .game-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -39,7 +39,6 @@ header {
 }
 
 .game h2 {
-    font-size: 20px;
     margin: 10px 0;
 }
 
@@ -62,7 +61,7 @@ header {
 }
 
 footer {
-    margin-top: 20px;
     background: #444;
     padding: 15px;
+    margin-top: 20px;
 }
