@@ -3,63 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Tu Negocio</title>
+    <title>Juegos Populares</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">TuLogo</div>
-        <nav>
-            <ul>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#sobre-nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Juegos Populares</h1>
     </header>
 
-    <section class="hero">
-        <h1>Impulsa tu negocio con nosotros</h1>
-        <p>Ofrecemos soluciones innovadoras para hacer crecer tu empresa.</p>
-        <a href="#contacto" class="btn">Contáctanos</a>
-    </section>
-
-    <section id="servicios" class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-container">
-            <div class="service">
-                <h3>Marketing Digital</h3>
-                <p>Potenciamos tu marca en redes sociales y Google.</p>
+    <main>
+        <section class="game-list">
+            <div class="game">
+                <img src="img/minecraft.jpg" alt="Minecraft">
+                <h2>Minecraft</h2>
+                <p>Un juego de mundo abierto donde puedes construir, explorar y sobrevivir.</p>
+                <a href="juegos/minecraft.html" class="btn">Ver más</a>
             </div>
-            <div class="service">
-                <h3>Desarrollo Web</h3>
-                <p>Diseñamos sitios web modernos y funcionales.</p>
-            </div>
-            <div class="service">
-                <h3>SEO & Analytics</h3>
-                <p>Optimización para que te encuentren más rápido.</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="sobre-nosotros" class="about">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos un equipo apasionado en la transformación digital.</p>
-    </section>
+            <div class="game">
+                <img src="img/fortnite.jpg" alt="Fortnite">
+                <h2>Fortnite</h2>
+                <p>Un Battle Royale con acción, construcción y eventos en vivo.</p>
+                <a href="juegos/fortnite.html" class="btn">Ver más</a>
+            </div>
 
-    <section id="contacto" class="contact">
-        <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Tu Nombre" required>
-            <input type="email" placeholder="Tu Email" required>
-            <textarea placeholder="Tu Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+            <div class="game">
+                <img src="img/lol.jpg" alt="League of Legends">
+                <h2>League of Legends</h2>
+                <p>Un MOBA donde equipos luchan para destruir la base enemiga.</p>
+                <a href="juegos/lol.html" class="btn">Ver más</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Tu Empresa - Todos los derechos reservados</p>
+        <p>&copy; 2025 Juegos Populares</p>
     </footer>
 </body>
 </html>
