@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ header {
     font-size: 24px;
 }
 
+/* Estilos para la página principal */
 .game-list {
     display: flex;
     justify-content: center;
@@ -35,6 +37,8 @@ header {
 
 .game img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -64,4 +68,97 @@ footer {
     background: #444;
     padding: 15px;
     margin-top: 20px;
+}
+
+/* Estilos para las páginas individuales */
+.game-detail {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
+.game-detail img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-detail h2 {
+    margin-top: 15px;
+    color: #ff6600;
+}
+
+.game-detail p, .game-detail ul {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.game-detail ul {
+    padding-left: 20px;
+}
+
+.game-detail ul li {
+    margin-bottom: 5px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background: #cc5500;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .game-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-detail {
+        width: 90%;
+    }
+}
+/* Estilo para los elementos de los juegos (tarjetas) */
+.game {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto al pasar el ratón sobre la tarjeta del juego */
+.game:hover {
+    transform: translateY(-10px);  /* Eleva el cuadro hacia arriba */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);  /* Sombra más intensa */
+}
+
+.game img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game h2 {
+    margin: 10px 0;
+}
+
+.game p {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
